@@ -1,0 +1,74 @@
+<div class="container-fluid">
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-flex align-items-center justify-content-between">
+                <h4 class="mb-0 font-size-18">SISTEMA TICKETS
+
+                </h4>
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item active">Pagina proncipal</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end page title -->
+
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card overflow-hidden">
+                <div class="bg-soft-primary">
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="text-primary p-3">
+                                <h5 class="text-primary">Bievenido !</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body pt-0">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="avatar-md profile-user-wid mb-4">
+                                <img src="assets/images/users/avatar-1.jpg" alt="" class="img-thumbnail rounded-circle">
+                            </div>
+                            <h5 class="font-size-15 text-truncate">Henry</h5>
+                            <p class="text-muted mb-0 text-truncate">Atención al cliente</p>
+                        </div>
+
+                        <div class="col-sm-8">
+                            <div class="pt-4">
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="font-size-15">125</h5>
+                                        <p class="text-muted mb-0">Projects</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="font-size-15">$1245</h5>
+                                        <p class="text-muted mb-0">Revenue</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-xl-12">
+            <div class="row">
+                <div *ngFor="let stat of statData" class="col-md-4">
+                    <app-stat [title]="stat.title" [value]="stat.value" [icon]="stat.icon"></app-stat>
+                </div>
+            </div>
+            <!-- end row -->
+
+    </div>
+    <!-- end row -->
+
+    
+</div> <!-- container-fluid -->
